@@ -17,7 +17,7 @@ comb_all = set(itertools.combinations(dots, 2))
 
 # There are forbidden strokes that are impossible in the game e.g you'll need to skip dot to draw it.
 # Found empirically, not elegant but who cares.
-comb_forbidden = set([(1,9),(1,10),(2,6),(2,8),(2,10),(3,5),(3,6),(3,7),(3,9),(2,11),(3,11),(1,11)])
+comb_forbidden = set([(1,9),(1,10),(1,11),(2,6),(2,8),(2,10),(2,11),(3,6),(3,7),(3,9),(3,11),(3,11),(4,8),(4,10),(5,7),(5,9),(6,2),(6,3),(6,9),(6,10),(7,5),(7,3),(8,4),(8,2),(9,6),(9,5),(9,3),(9,1),(10,6),(10,4),(10,2),(10,1),(11,2),(11,1),(11,3)])
 
 # Lets enumerate edges exists are difference
 comb_possible = comb_all - comb_forbidden
